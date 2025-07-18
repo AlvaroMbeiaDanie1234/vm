@@ -36,8 +36,8 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="text-white font-semibold mb-2">Telefone</h4>
-                  <p className="text-gray-300">+244 900 000 000</p>
-                  <p className="text-gray-300">+244 900 000 001</p>
+                  <p className="text-gray-300">+244 929 671 662</p>
+                  <p className="text-gray-300">+244 953 373 273</p>
                 </div>
               </div>
 
@@ -47,8 +47,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="text-white font-semibold mb-2">Email</h4>
-                  <p className="text-gray-300">info@vmprojects.com</p>
-                  <p className="text-gray-300">projects@vmprojects.com</p>
+                  <p className="text-gray-300">vm.tech@vmtech.facilita.ao</p>
                 </div>
               </div>
 
@@ -59,7 +58,7 @@ const Contact = () => {
                 <div>
                   <h4 className="text-white font-semibold mb-2">Localização</h4>
                   <p className="text-gray-300">Luanda, Angola</p>
-                  <p className="text-gray-300">Zona Industrial</p>
+                  <p className="text-gray-300">Cacuaco</p>
                 </div>
               </div>
 

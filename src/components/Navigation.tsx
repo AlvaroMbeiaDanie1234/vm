@@ -60,12 +60,12 @@ const Navigation = () => {
 
           <div className="hidden md:flex items-center space-x-4">
             <motion.a
-              href="tel:+244900000000"
+              href="tel:+244929671662"
               whileHover={{ scale: 1.05 }}
               className="flex items-center space-x-2 text-white hover:text-blue-300 transition-colors duration-300"
             >
               <Phone className="w-4 h-4" />
-              <span className="text-sm">+244 900 000 000</span>
+              <span className="text-sm">+244 929 671 662</span>
             </motion.a>
             <motion.button
               whileHover={{ scale: 1.05 }}

@@ -8,7 +8,7 @@ import { Textarea } from "@/components/ui/textarea";
 const WhatsAppButton = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [message, setMessage] = useState('');
-  const whatsappNumber = "+351900000000"; // Substitua pelo número de WhatsApp da empresa
+  const whatsappNumber = "+244929671662"; // Substitua pelo número de WhatsApp da empresa
   
   const handleSendMessage = () => {
     if (!message.trim()) return;

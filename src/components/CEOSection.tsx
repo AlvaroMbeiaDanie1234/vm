@@ -2,6 +2,8 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
+import ceoImage from '../../assets/images/ceo.jpg'; // Imagem do CEO
+
 const CEOSection = () => {
   const [displayText, setDisplayText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -47,7 +49,7 @@ const CEOSection = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-gold-light to-gold-dark rounded-lg blur-sm opacity-30"></div>
               <div className="relative bg-blue-900/40 backdrop-blur-sm rounded-lg p-2 border border-gold/30">
                 <img
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=600&fit=crop&crop=face"
+                  src={ceoImage}
                   alt="CEO da VM Projects"
                   className="w-full h-auto rounded-md object-cover"
                 />
@@ -65,7 +67,7 @@ const CEOSection = () => {
           >
             <div className="bg-blue-900/40 backdrop-blur-sm rounded-lg p-8 border border-blue-800 hover:border-gold/50 transition-all duration-300">
               <div className="mb-6">
-                <h3 className="text-2xl font-bold text-white mb-2">Victor Silva</h3>
+                <h3 className="text-2xl font-bold text-white mb-2">Pedro Matias</h3>
                 <p className="text-gold font-medium">CEO & Fundador</p>
               </div>
               

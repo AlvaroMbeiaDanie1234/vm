@@ -1,37 +1,97 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Camera, Building, Hammer, HardHat } from 'lucide-react';
+import { 
+  Camera, Building, Hammer, HardHat, 
+  Zap, PaintBucket, Wrench, Snowflake,
+  Satellite, Ruler, Home, Palette,
+  Move3D, Package
+} from 'lucide-react';
 
 const Services = () => {
   const services = [
     {
+      icon: Building,
+      title: "Construção Civil",
+      description: "Projetos de construção civil com qualidade e prazo garantidos",
+      gradient: "from-blue-600 to-blue-800",
+      border: "border-blue-800 hover:border-gold"
+    },
+    {
+      icon: Ruler,
+      title: "Arquitetura",
+      description: "Projetos arquitetônicos personalizados e inovadores",
+      gradient: "from-blue-500 to-blue-700",
+      border: "border-blue-800 hover:border-gold"
+    },
+    {
+      icon: Home,
+      title: "Remodelação",
+      description: "Transformação e modernização de espaços existentes",
+      gradient: "from-blue-400 to-blue-600",
+      border: "border-blue-800 hover:border-gold"
+    },
+    {
+      icon: Zap,
+      title: "Electricidade",
+      description: "Instalações elétricas seguras e eficientes",
+      gradient: "from-yellow-500 to-yellow-700",
+      border: "border-blue-800 hover:border-gold"
+    },
+    {
+      icon: PaintBucket,
+      title: "Pintura e Estucagem",
+      description: "Acabamentos de qualidade com técnicas modernas",
+      gradient: "from-green-500 to-green-700",
+      border: "border-blue-800 hover:border-gold"
+    },
+    {
+      icon: Wrench,
+      title: "Canalização",
+      description: "Sistemas hidráulicos e sanitários profissionais",
+      gradient: "from-cyan-500 to-cyan-700",
+      border: "border-blue-800 hover:border-gold"
+    },
+    {
+      icon: Snowflake,
+      title: "Refrigeração e Climatização",
+      description: "Sistemas HVAC para conforto térmico ideal",
+      gradient: "from-blue-300 to-blue-500",
+      border: "border-blue-800 hover:border-gold"
+    },
+    {
+      icon: Satellite,
+      title: "Antena Parabólica",
+      description: "Instalação e configuração de sistemas de telecomunicações",
+      gradient: "from-purple-500 to-purple-700",
+      border: "border-blue-800 hover:border-gold"
+    },
+    {
       icon: Camera,
       title: "CCTV",
-      description: "Sistemas de vigilância de última geração com instalação e monitoramento profissional",
-      gradient: "from-blue-600 to-blue-800",
-      border: "border-blue-800 hover:border-gold-base"
+      description: "Sistemas de vigilância de última geração com monitoramento",
+      gradient: "from-red-500 to-red-700",
+      border: "border-blue-800 hover:border-gold"
     },
     {
-      icon: Building,
-      title: "Construção",
-      description: "Projetos de construção civil com qualidade e prazo garantidos",
-      gradient: "from-blue-500 to-blue-700",
-      border: "border-blue-800 hover:border-gold-base"
+      icon: Move3D,
+      title: "Drywall",
+      description: "Divisórias e forros em gesso cartonado",
+      gradient: "from-orange-500 to-orange-700",
+      border: "border-blue-800 hover:border-gold"
     },
     {
-      icon: Hammer,
-      title: "Carpintaria",
-      description: "Trabalhos em madeira personalizados com acabamento de excelência",
-      gradient: "from-blue-400 to-blue-600",
-      border: "border-blue-800 hover:border-gold-base"
+      icon: Package,
+      title: "Chão Flutuante",
+      description: "Aplicação profissional de pavimentos flutuantes",
+      gradient: "from-amber-600 to-amber-800",
+      border: "border-blue-800 hover:border-gold"
     },
     {
-      icon: HardHat,
-      title: "Engenharia Civil",
-      description: "Soluções completas em engenharia com inovação e sustentabilidade",
-      gradient: "from-blue-300 to-blue-500",
-      border: "border-blue-800 hover:border-gold-base"
+      icon: Palette,
+      title: "Design de Interiores",
+      description: "Criação de ambientes únicos e funcionais",
+      gradient: "from-pink-500 to-pink-700",
+      border: "border-blue-800 hover:border-gold"
     },
   ];
 
@@ -54,7 +114,7 @@ const Services = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
           {services.map((service, index) => (
             <motion.div
               key={service.title}
